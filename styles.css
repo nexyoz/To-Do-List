@@ -1,0 +1,122 @@
+/* 全局样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 待办事项容器 */
+.todo-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* 标题 */
+h1 {
+    text-align: center;
+    color: #5c67f2;
+}
+
+/* 输入框和下拉菜单 */
+#todo-input, #priority-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* 按钮 */
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5c67f2;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a54e1;
+}
+
+/* 待办事项列表 */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li:hover {
+    background-color: #f9f9f9;
+}
+
+/* 优先级样式 */
+.low {
+    border-left: 5px solid #90a4ae; /* 低优先级 */
+}
+
+.medium {
+    border-left: 5px solid #ffa726; /* 中优先级 */
+}
+
+.high {
+    border-left: 5px solid #e53935; /* 高优先级 */
+}
+
+/* 复选框和删除按钮 */
+input[type="checkbox"], button.delete {
+    margin: 0 10px;
+}
+
+button.delete {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.delete:hover {
+    background-color: #e03e3e;
+}
+
+/* 使用说明 */
+.instructions {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    .todo-container {
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
